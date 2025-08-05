@@ -1,0 +1,543 @@
+/* Name: theme-default.css */
+
+/*--------------------------------------------------------------
+=>>	Smartmenus - Navabr Css
+--------------------------------------------------------------*/
+
+/*Navbar Dark Css*/
+.navbar-dark { 
+	border-top: 4px solid #0e98d6; 
+}
+/*Navbar Dropdown Dark Css*/
+.navbar.navbar-dark .nav .dropdown-item:focus, 
+.navbar.navbar-dark .nav .dropdown-item:hover {
+    color: #0e98d6;
+}
+.navbar.navbar-dark .nav .dropdown-menu .menu-item.active .dropdown-item {
+    color: #0e98d6;
+}
+.navbar.navbar-dark .nav .dropdown-menu > .menu-item > ul.dropdown-menu .menu-item.active .dropdown-item {
+	color: #0e98d6;
+}
+.navbar.navbar-dark .nav .dropdown-menu > .menu-item > ul.dropdown-menu > .menu-item > .dropdown-item:hover, 
+.navbar.navbar-dark .nav .dropdown-menu > .menu-item > ul.dropdown-menu > .menu-item > .dropdown-item:focus {
+	color: #0e98d6;
+}
+@media (max-width: 991px) {	
+	.navbar.navbar-dark .nav .menu-item:hover .nav-link, 
+	.navbar.navbar-dark .nav .menu-item.active .nav-link {
+		color: #0e98d6;
+	}
+	/*Navbar Dropdown Dark Css*/
+	.navbar.navbar-dark .nav .dropdown-menu .dropdown-item:hover, 
+	.navbar.navbar-dark .nav .dropdown-menu .dropdown-item:focus { 
+		color: #0e98d6;
+	}
+}
+@media (min-width: 992px) {
+	/*Navbar Dropdown Dark Css*/
+	.navbar.navbar-dark .nav .dropdown-item:focus, 
+	.navbar.navbar-dark .nav .dropdown-item:hover {
+		color: #0e98d6;
+	}
+}
+
+
+/*--------------------------------------------------------------
+=>>	Common
+--------------------------------------------------------------*/
+
+blockquote {
+	border-left: 3px solid #0e98d6;
+}
+address i { 
+	color: #0e98d6;
+}
+address a:hover, 
+address a:focus { 
+	color: #0e98d6 !important;
+	text-decoration: underline;
+}
+mark, ins { background: #0e98d6; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	box-shadow: 0 0 0 0.25rem rgba(14,152,214,.45) !important;
+	border-color: #0e98d6 !important;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+    border: 2px solid #0e98d6;
+}
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 2px solid #0e98d6;
+    color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Buttons
+--------------------------------------------------------------*/
+
+.btn-default { background: #0e98d6; }
+.btn-light:hover, .btn-light:focus { background: #0e98d6; }
+.btn-default-dark { background: #0e98d6; }
+.btn-border { border: 2px solid #0e98d6; }
+.btn-border:hover, .btn-border:focus { background: #0e98d6; border: 2px solid #0e98d6; }
+.common-btn {
+	border: 2px solid #0e98d6;
+}
+.common-btn:hover, 
+.common-btn:focus {
+    color: #0e98d6 !important;
+	border: 2px solid #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Search Popup Box For Header
+--------------------------------------------------------------*/
+
+#search-popup .btn {
+	background-color: #0e98d6;
+	border: 1px solid #0e98d6;
+}
+/*Serch Form for entry-content*/
+#searchform.input-group .btn {
+	border: 2px solid #0e98d6;
+}
+#searchform.input-group .btn:hover {
+	border: 2px solid #0e98d6;
+	background-color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Header Contact Details
+--------------------------------------------------------------*/
+
+.head-contact-info li span.newsexo-time { 
+	background-color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Social Icons
+--------------------------------------------------------------*/
+
+.custom-social-icons li > a {
+	color: #0e98d6;
+}
+.custom-social-icons .followus:before {
+    background: #0e98d6;
+}
+.custom-social-icons .followus:after {
+    background: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Site Branding & Advertisement
+--------------------------------------------------------------*/
+
+.site-branding .site-title a:hover, 
+.site-branding .site-title a:focus {
+	color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Trending News Top Marqueee Area
+--------------------------------------------------------------*/
+
+.trending-news-col .heading h5 {
+	background-color: #0e98d6;
+}
+.trending-news-col .heading h5:before {
+	border-left: 15px solid #0e98d6;
+}
+.trending-news-col .trending-news-content a:hover h6, 
+.trending-news-col .trending-news-content a:focus h6 {
+	color: #0e98d6;
+}
+.news-section-title.five h5 {
+	background-color: #0e98d6;
+}
+.news-section-title.five h5:before {
+	border-left: 15px solid #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> News Section Title & View All Button
+--------------------------------------------------------------*/
+
+.view-all-btn:hover, 
+.view-all-btn:focus {
+    background-color: #0e98d6;
+    border: 1px solid #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Big News Section - Featured News
+--------------------------------------------------------------*/
+
+.overlay-news-area .entry-header .entry-title a:hover, 
+.overlay-news-area .entry-header .entry-title a:focus {
+	text-decoration-color: #0e98d6;
+}
+.overlay-news-area .entry-meta a:hover, 
+.overlay-news-area .entry-meta a:focus {
+	text-decoration-color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Grid View News Section
+--------------------------------------------------------------*/
+
+.grid-view-news-area.vrsn-three {
+	border-top: 2px solid #0e98d6;
+}
+.grid-view-news-area .entry-header .entry-title a:hover, 
+.grid-view-news-area .entry-header .entry-title a:focus {
+	color: #0e98d6;
+	text-decoration-color: #0e98d6;
+}
+.grid-view-news-area .entry-meta a:hover, 
+.grid-view-news-area .entry-meta a:focus {
+	text-decoration-color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> List View News Section
+--------------------------------------------------------------*/
+
+.list-view-news-area .entry-header .entry-title a:hover, 
+.list-view-news-area .entry-header .entry-title a:focus {
+	color: #0e98d6;
+	text-decoration-color: #0e98d6;
+}
+.list-view-news-area .entry-meta a:hover, 
+.list-view-news-area .entry-meta a:focus {
+	text-decoration-color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Blog Meta
+--------------------------------------------------------------*/
+
+.entry-meta a:hover, .entry-meta a:focus { color: #0e98d6; }
+.entry-meta .cat-links a { 
+	color: #0e98d6;
+}
+/*Meta Category*/
+.entry-meta .cat-links .links-bg:nth-child(1) {
+	background: #0088cb;
+}
+/*Meta Tags*/
+.entry-meta .tag-links a {
+    background-color: #0e98d6;
+    border: 1px solid #0e98d6;
+}
+/*More Link*/
+.more-link {
+    border: 1px solid #0e98d6;
+}
+.more-link:hover, .more-link:focus {
+	color: #0e98d6 !important;
+}
+.more-link i {
+	color: #0e98d6;
+}
+/*Pagination*/
+.pagination a:hover, .pagination a.active { background-color: #0e98d6; border: 1px solid #0e98d6; }
+.pagination .nav-links .page-numbers.current { background-color: #0e98d6; border: 1px solid #0e98d6; }
+/*Edit Link*/
+.edit-link {
+	border: 1px solid #0e98d6;
+}
+.edit-link .post-edit-link:hover, 
+.edit-link i.fa-edit { 
+	color: #0e98d6; 
+}
+
+
+/*--------------------------------------------------------------
+=>> Blog Single
+--------------------------------------------------------------*/
+
+.entry-content a {
+	color: #0e98d6;
+}
+.entry-content a:hover, 
+.entry-content a:focus {
+	color: #0e98d6;
+}
+/*Blog Author*/
+.post-author-area.vrsn-three {
+	border-top: 2px solid #0e98d6;
+}
+.post-author-area .author-content .author-name a:hover { 
+	color: #0e98d6;
+    text-decoration-color: #0e98d6;
+}
+.post-author-area .author-content p a { 
+	color: #0e98d6;
+}
+.post-author-area .author-content p a:hover { 
+	color: #0e98d6;
+	text-decoration-color: #0e98d6;
+}
+/*Comments*/
+.comment-avatar { 
+	border: 3px solid #0e98d6;  
+}
+.comment-detail-title a:hover, 
+.comment-detail-title a:focus { 
+	color: #0e98d6; 
+}
+.reply a {
+	border: 1px solid #0e98d6;
+}
+.reply a:hover, .reply a:focus { 
+	border: 1px solid #0e98d6;
+	color: #0e98d6; 
+}
+/*Comment Form*/
+.comment-form .required {
+	color: #0e98d6;
+}
+.logged-in-as a {
+	text-decoration: underline 0.10em #0e98d6;
+}
+.logged-in-as a:hover, 
+.logged-in-as a:focus {
+    color: #0e98d6;
+    text-decoration-color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Mixed Classes
+--------------------------------------------------------------*/
+
+.bg-default { background-color: #0e98d6 !important; }
+.text-default { color: #0e98d6 !important; }
+.entry-header .entry-title a:hover, 
+.entry-header .entry-title a:focus { 
+	color: #0e98d6; 
+}
+
+
+/*--------------------------------------------------------------
+=>> Theme Breadcrumb Area
+--------------------------------------------------------------*/
+
+.page-breadcrumb > li a:hover,
+.page-breadcrumb > li.active, 
+.page-breadcrumb > li.active a { 
+	color: #0e98d6; 
+}
+
+
+/*--------------------------------------------------------------
+=>> Sidebar Widgets
+--------------------------------------------------------------*/
+
+.sidebar .widget .wp-block-heading.eight {
+	background-color: #0e98d6;
+}
+.sidebar .widget .wp-block-heading.eight:before {
+	border-left: 15px solid #0e98d6;
+}
+/*Latest Posts Widget*/
+.widget .wp-block-latest-posts li a:hover, 
+.widget .wp-block-latest-posts li a:focus {
+	color: #0e98d6;
+	text-decoration-color: #0e98d6;
+}
+/*List View Post Widget*/
+.list-view-post-widget .post .entry-header .entry-title a:hover, 
+.list-view-post-widget .post .entry-header .entry-title a:focus {
+	color: #0e98d6;
+	text-decoration-color: #0e98d6;
+}
+.list-view-post-widget .post .entry-meta .posted-on a:hover, 
+.list-view-post-widget .post .entry-meta .posted-on a:focus {
+	text-decoration-color: #0e98d6;
+}
+/*Tags*/
+.widget .tagcloud a:hover, .widget .tagcloud a:focus {
+    background-color: #0e98d6;
+    border: 1px solid #0e98d6;
+}
+/*Mixed Widget for All Sidebar*/
+.widget .wp-block-archives-list li a:hover,
+.widget .wp-block-archives-list li a:focus,
+.widget .wp-block-categories-list li a:hover,
+.widget .wp-block-categories-list li a:focus,
+.widget .wp-block-page-list li a:hover, 
+.widget .wp-block-page-list li a:focus, 
+.widget .widget_meta ul li a:hover, 
+.widget .widget_meta ul li a:focus,
+.widget.widget_meta ul li a:hover, 
+.widget.widget_meta ul li a:focus,
+.widget .wp-block-latest-comments li a:hover, 
+.widget .wp-block-latest-comments li a:focus, 
+.widget .wp-block-rss li a:hover, 
+.widget .wp-block-rss li a:focus {
+    color: #0e98d6;
+    text-decoration-color: #0e98d6;
+}
+/*Navigation Menu Widget*/
+.widget ul.menu li.menu-item a:hover {
+	color: #0e98d6;
+    text-decoration-color: #0e98d6;
+}
+/*Tags Widget*/
+.widget .wp-block-tag-cloud a {
+	background-color: #0e98d6;
+	border: 1px solid #0e98d6;
+}
+/*Calendar Widget*/
+.widget .wp-block-calendar {
+	border: 2px solid #0e98d6;
+}
+.widget .wp-block-calendar .wp-calendar-nav .wp-calendar-nav-prev a, 
+.widget .wp-block-calendar .wp-calendar-nav .wp-calendar-nav-prev a:hover,  
+.widget .wp-block-calendar .wp-calendar-nav .wp-calendar-nav-next a, 
+.widget .wp-block-calendar .wp-calendar-nav .wp-calendar-nav-next a:hover {
+	color: #0e98d6;
+}
+.widget .wp-block-calendar caption {
+	background-color: #0e98d6;
+}
+.widget .wp-block-calendar table:where(:not(.has-text-color)) a, 
+.widget .wp-block-calendar table:where(:not(.has-text-color)) a:hover {
+	color: #0e98d6;
+}
+.widget .wp-block-calendar .wp-calendar-nav-prev a, 
+.widget .wp-block-calendar .wp-calendar-nav-next a, 
+.widget .wp-block-calendar .wp-calendar-nav-prev a:hover, 
+.widget .wp-block-calendar .wp-calendar-nav-next a:hover {
+	color: #0e98d6;
+} 
+/*Table Widget*/
+.widget .wp-block-table .wp-element-caption {
+    background-color: #0e98d6;
+}
+.widget .wp-block-table td a {
+	color: #0e98d6;
+}
+.widget .wp-block-table td a:hover {
+	color: #0e98d6;
+	text-decoration-color: #0e98d6;
+}
+/*Looged-in-color*/
+.logged-in-color a {
+    text-decoration: underline 0.10em #0e98d6;
+}
+.logged-in-color a:hover, .logged-in-color a:focus {
+    color: #0e98d6;
+    text-decoration-color: #0e98d6;
+}
+
+/*--------------------------------------------------------------
+=>> Footer Section & Widgets
+--------------------------------------------------------------*/
+
+/*Recent Posts Widget*/
+.footer-sidebar .widget .wp-block-latest-posts li a:hover, 
+.footer-sidebar .widget .wp-block-latest-posts li a:focus {
+	color: #0e98d6;
+	text-decoration-color: #0e98d6;
+}
+/*subscribe-newsletter*/
+.subscribe-area .btn-subscribe { 
+	background: #0e98d6;
+	border: 1px solid #0e98d6;
+}
+.subscribe-area .btn-subscribe:hover { 
+	border: 1px solid #0e98d6;	
+	color: #0e98d6;
+}
+/*Mixed Widget for Footer Sidebar*/
+.footer-sidebar .widget .wp-block-archives-list li a:hover,
+.footer-sidebar .widget .wp-block-categories-list li a:hover,
+.footer-sidebar .widget .wp-block-page-list li a:hover, 
+.footer-sidebar .widget .widget_meta ul li a:hover, 
+.footer-sidebar .widget.widget_meta ul li a:hover, 
+.footer-sidebar .widget .wp-block-latest-comments li a:hover, 
+.footer-sidebar .widget .wp-block-rss li a:hover, 
+.footer-sidebar .widget ul.menu li.menu-item a:hover {
+    color: #0e98d6;
+    text-decoration-color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> Footer Copyrights - Site Info - Footer Menu
+--------------------------------------------------------------*/
+
+.site-info a { 
+	color: #0e98d6;
+}
+.site-info a:hover, 
+.site-info a:focus {
+	color: #0e98d6;
+    text-decoration-color: #0e98d6;
+}
+
+ul.site-info-menu li a:hover, 
+ul.site-info-menu li a:focus {
+	color: #0e98d6;
+	text-decoration-color: #0e98d6;
+}
+ul.site-info-menu .menu-item.active .nav-link {
+	color: #0e98d6;
+}
+
+
+/*--------------------------------------------------------------
+=>> 404 Error Page
+--------------------------------------------------------------*/
+
+.theme-error-page .title b { color: #0e98d6; }
+.theme-error-page .title i { color: #0e98d6; }
+
+
+/*--------------------------------------------------------------
+=>> Page Scroll Up
+--------------------------------------------------------------*/
+
+.page-scroll-up a {
+	background: #0e98d6;
+}
+.page-scroll-up a:hover,
+.page-scroll-up a:active {
+	background: #0e98d6;
+}

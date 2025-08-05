@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20.6.72.7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            width: 60%;
+            max-width: 400px;
+        }
+
+        button {
+            padding: 5px 10px;
+            font-size: 16px;
+            margin-left: 10px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dynamic File Search</h1>
+        <input type="text" id="searchInput" placeholder="Search for files...">
+        <button onclick="searchFiles()">Search</button>
+    </header>
+    <main>
+        <ul id="results"></ul>
+    </main>
+    <script>
+        // Simulated file data
+        const files = [
+            'https://shahzal.com/Book1.xlsx',
+            'https://shahzal.com/Book2.xlsx',
+            'https://shahzal.com/Book3%201.xlsx',
+            'https://shahzal.com/Book3.xlsx',
+            'https://shahzal.com/Book4.xlsx',
+            'https://shahzal.com/Book5.xlsx',
+            'https://shahzal.com/Book6.xlsx',
+            'https://shahzal.com/Book7.xlsx',
+            'https://shahzal.com/Copy%20of%20Book2.xlsx',
+            'https://shahzal.com/Copy%20of%20Book4%20(1).xlsx',
+            'https://shahzal.com/Copy%20of%20Book4%20(2)%20(1).xlsx',
+            'https://shahzal.com/Copy%20of%20Book4%20(2).xlsx',
+            'https://shahzal.com/Copy%20of%20Book4.xlsx',
+            'https://shahzal.com/2/KeysExport%20(1).xml',
+            'https://shahzal.com/2/book.html',
+            'https://shahzal.com/2/bookmarks_8_22_24.html',
+            'https://shahzal.com/2/chrome.csv',
+            'https://shahzal.com/2/google.csv',
+            'https://shahzal.com/2/new',
+            'https://shahzal.com/2/search.html',
+            'https://shahzal.com/colour',
+            'https://shahzal.com/blogs',
+            'https://shahzal.com/home',
+            'https://shahzal.com/my',
+            'https://my.shahzal.com/Youngest%20Microsoft%20Pro%20at%2015!.mp4',
+            'https://mvp.microsoft.com/en-US/studentambassadors/profile/e35e0c4c-5d79-454a-8d8d-cb75c8b016fc?wt.mc_id=studentamb_281705',
+            'https://my.shahzal.com/blogs',
+            'https://my.shahzal.com/blend',
+            'https://my.shahzal.com/colour',
+            'https://my.shahzal.com/colour/effect.html',
+            'https://my.shahzal.com/colour/sketch.html',
+            'https://purple-tree-026ae2e10.5.azurestaticapps.net/',
+            'https://brave-plant-0df5a7c1e.5.azurestaticapps.net/',
+            'https://delightful-ocean-00ca65510.5.azurestaticapps.net',
+            'https://gentle-pebble-01e938610.4.azurestaticapps.net/',
+            'https://gray-beach-0792e3b10.5.azurestaticapps.net/',
+            'https://my.shahzal.com/deck.pptx',
+            'https://my.shahzal.com/deck1.pptx',
+            'https://my.shahzal.com/windows.pptx',
+            'https://my.shahzal.com/meta.txt',
+            'https://my.shahzal.com/srmapofmain.txt',
+            'https://my.shahzal.com/map.txt',
+            'https://my.shahzal.com/pass.txt',
+            'https://chat.whatsapp.com/Djp2Wfn7gjT5x5MuYSuclt',
+            'https://chat.whatsapp.com/GZWAi6ea7mh0IVpnACMh3t',
+            'https://chat.whatsapp.com/KcKHRbjuSAo7NbBuZEf6GI',
+'https://shahzal.azurewebsites.net'
+        ];
+
+        function searchFiles() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const results = document.getElementById('results');
+
+            // Clear previous results
+            results.innerHTML = '';
+
+            // Search through the files
+            const filteredFiles = files.filter(file => file.toLowerCase().includes(query));
+
+            // Display results
+            filteredFiles.forEach(file => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = file;  // Use the file URL as is
+                a.textContent = file;
+                li.appendChild(a);
+                results.appendChild(li);
+            });
+
+            if (filteredFiles.length === 0) {
+                results.innerHTML = '<li>No files found.</li>';
+            }
+        }
+
+        // Add event listener for Enter key
+        document.getElementById('searchInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                searchFiles();
+            }
+        });
+    </script>
+</body>
+</html>

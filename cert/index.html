@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting to Awards Folder...</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d0d;
+      color: #0ff;
+      font-family: 'Orbitron', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #console {
+      white-space: pre-wrap;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      max-width: 80%;
+    }
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background-color: #0ff;
+      animation: blink 1s step-start infinite;
+    }
+    @keyframes blink {
+      50% { background-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <div id="console">
+    <span id="output"></span><span class="cursor"></span>
+  </div>
+
+  <script>
+    const lines = [
+      "🚀 Initializing Award Vault Access...",
+      "🔐 Verifying Identity Signature...",
+      "✅ Identity Verified: Shahzal Rehman",
+      "🧭 Redirecting to GitHub Secure Directory...",
+      "🌐 URL: https://github.com/Shahzal-Rehman/Shahzal-Rehman/tree/1e72cd9b3725f9077b34281e26645a30f0e5bd4d/img/award ",
+      "💡 Also check: sites.google.com/view/shahzalrehmani/work"
+    ];
+
+    let currentLine = 0;
+    let currentChar = 0;
+    const output = document.getElementById("output");
+
+    function typeLine() {
+      if (currentLine < lines.length) {
+        const line = lines[currentLine];
+        if (currentChar < line.length) {
+          output.innerHTML += line.charAt(currentChar);
+          currentChar++;
+          setTimeout(typeLine, 50); // typing speed per character
+        } else {
+          output.innerHTML += "\n";
+          currentLine++;
+          currentChar = 0;
+          setTimeout(typeLine, 400); // delay between lines
+        }
+      } else {
+        // All lines typed. Wait 3 seconds, then redirect.
+        setTimeout(() => {
+          window.location.href = "https://github.com/Shahzal-Rehman/Shahzal-Rehman/tree/1e72cd9b3725f9077b34281e26645a30f0e5bd4d/img/award";
+        }, 3000);
+      }
+    }
+
+    typeLine();
+  </script>
+</body>
+</html>

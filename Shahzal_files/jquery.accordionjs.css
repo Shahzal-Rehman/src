@@ -1,0 +1,206 @@
+.accordionjs, .accordionjs * {
+  -webkit-box-sizing                    : border-box !important;
+  -moz-box-sizing                       : border-box !important;
+  box-sizing                            : border-box !important;
+}
+
+/*
+** The main <UL> element holding the tabs.
+*/
+.accordion_slider {
+    position: relative;
+}
+.accordionjs {
+  font-family: GalanoGrotesque;
+  border: 0px solid #222;
+  border-radius: 0px;
+  margin: 0 auto;
+  padding: 0;
+  height: 540px;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+}
+
+  .accordionjs > li {
+    background-color: #2c2b6d;
+    margin-right: -1200px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+
+/*
+** The tabs of the accordion are made up of 3 main elements.
+** 1) <input radiobox />
+** 2) <div /> text title of the box
+** 3) <i>  FontAwesome styled checkbox to show the state.
+*/
+.accordionjs-select {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+/* BEGIN accordionjs-title rules */
+.accordionjs-title {
+
+}
+
+  .accordionjs-title span {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 28px;
+	font-weight: 500;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: 62px;
+    margin-left: 0;
+    /* line-height: 200px; */
+    transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+  }
+
+  .accordionjs-title i {
+    color                               : #ffffff;
+    margin-right                        : 10px;
+    font-size                           : 18px;
+  }
+/* END accordionjs-title rules */
+
+/* BEGIN accordionjs-content rules */
+.accordionjs-content {
+    background-color: #2c2b6d;
+    color: #fff;
+    height: 404px;
+    width: 730px;
+    padding: 25px 20px 25px 0px;
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+}
+/* END accordionjs-content rules */
+
+.accordionjs > li,
+.accordionjs-title,
+.accordionjs-content,
+.accordionjs-separator {
+  float: left;
+}
+
+
+.accordionjs-select:checked ~ .accordionjs-separator {
+  margin-right: 1400px;
+  margin-bottom: 0px;
+}
+
+.accordionjs-title, .accordionjs-select  {
+    background-color: #df3a27;
+    color: #ffffff;
+    width: 105px;
+    height: 540px !important;
+    font-size: 35px;
+    background: url(../../img/section.jpg) !important;
+    background-size: 105px 550px !important;
+    background-repeat: no-repeat !important;
+
+	
+}
+
+/* Dark-Blue colour for currently active steps. */
+.accordionjs-select:hover ~ .accordionjs-title, .accordionjs-select:checked ~ .accordionjs-title {
+    background-color: #df3a27;
+}
+
+/* Dark-Red colour for disabled steps. */
+.accordionjs-select:disabled ~ .accordionjs-title {
+    background-color: #942E2E;
+}
+
+.accordionjs-title, .accordionjs-select:checked ~ .accordionjs-content {
+    margin-right: 0px;
+    margin-bottom: 1px;
+}
+
+/* Do not change following properties, they aren't 
+generated automatically and are common for each slider. */
+
+.accordionjs > li, .accordionjs-title {
+	position:relative;
+}
+
+.accordionjs-separator {
+    transition: margin 0.6s ease 0.2s;
+    -o-transition: margin 0.6s ease 0.2s;
+    -moz-transition: margin 0.6s ease 0.2s;
+    -webkit-transition: margin 0.6s ease 0.2s;
+}
+
+[data-status="complete"] {
+    margin: 0 0 0 0px;
+}
+
+input.accordionjs-select {
+    background: url(../../img/section.jpg);
+}
+
+.acc_img img {
+    width: 100%;
+    min-width: 100%;
+	padding: 15px;
+}
+
+.acc_img {
+    margin-top: -5px;
+	padding-left: 10px;
+    height: 500px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.acc_cat {
+    padding: 17px 0px;
+    color: #df3a27;
+    font-size: 18px;
+	position: relative;
+}
+
+.acc_post {overflow: hidden;}
+
+.acc_title {
+    font-size: 28px;
+    padding: 50px 0 0px 0px;
+    line-height: 36px;
+    width: 250px;
+	position: relative;
+}
+
+.acc_content {
+    overflow: hidden;
+    width: 190px;
+    font-size: 12px;
+    padding: 20px 0px;
+	line-height: 19px;
+	position: relative;
+}
+
+.acc_content h4 {
+    font-size: 18px;
+    color: #df3a27;
+}
+.acc_button a {
+    background: #df3a27 !important;
+    color: #fff !important;
+    padding: 10px 30px 15px;
+    font-weight: 800;
+    line-height: 1 !important;
+	font-family: GalanoGrotesque;
+	position: relative;
+}

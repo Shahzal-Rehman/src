@@ -1,0 +1,8 @@
+jQuery(document).ready(function($) {
+    $("#tclose").click(function(){
+        $(".bg-popup").hide();
+    });
+    jQuery('.pop-close').on('click', function(){
+	  jQuery('.pgc-popup').hide();
+	});
+});

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shahzal Rehman, a Microsoft Learn Student Ambassador. Contact Shahzal at shahzalrehman0302@gmail.com or at shahzal.rehman@studentambassadors.com.">
+    <meta name="author" content="Shahzal Rehman">
+    <meta name="keywords" content="Shahzal Rehman, Microsoft Learn Student Ambassador, tech enthusiast, Shahzal Rehman Official">
+    <meta name="google-site-verification" content="Zh2kBBPJG7GZezC82-kdDvFdwV0mOOdgQsFUG8HYpYo">
+    <title>shahzal</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon/icon128.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+        /* Main Gradient Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(90deg, rgb(255, 192, 192) 5%, rgba(231, 255, 255, 1) 50%, rgba(192, 192, 192, 255) 95%);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Neon Text Animation */
+        .neon-text {
+            font-size: 15vw;
+            color: #fff;
+            text-align: center;
+            letter-spacing: 10px;
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+            animation: neonGlow 10s ease-in-out infinite;
+            white-space: nowrap;
+        }
+
+        @keyframes neonGlow {
+            0%,
+            100% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+            }
+
+            50% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+            }
+        }
+
+        /* Skill Box Container */
+        #shahzal {
+            position: relative;
+            width: 80%;
+            max-width: 1000px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+            display: none;
+            overflow: auto;
+            max-height: 25vh;
+        }
+
+        /* Skill Buttons */
+        .skill-box a,
+        .login-btn,
+        .sign-out-btn,
+        .whatsapp-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            background: linear-gradient(to right, rgba(0, 123, 255, 0) 50%, rgba(0, 123, 255, 0) 50%);
+            color: #00f;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            font-size: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-box a:hover,
+        .login-btn:hover,
+        .sign-out-btn:hover,
+        .whatsapp-btn:hover {
+            background: linear-gradient(to right, rgba(0, 123, 255, 0) 50%, rgba(0, 123, 255, 0) 50%);
+            transform: scale(1.05);
+        }
+
+        .skill-box a::before,
+        .login-btn::before,
+        .sign-out-btn::before,
+        .whatsapp-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 123, 255, 0);
+            transition: left 0.3s ease;
+        }
+
+        .skill-box a:hover::before,
+        .login-btn:hover::before,
+        .sign-out-btn:hover::before,
+        .whatsapp-btn:hover::before {
+            left: 0;
+        }
+
+        /* Fade In Up Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 40px, 0);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        /* Powered by Section */
+        .powered-by-container {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            background: rgba(0, 0, 255, 0.2);
+            border-top: 2px solid rgba(0, 0, 255, 0.5);
+        }
+
+        .powered-by-text {
+            color: #00f;
+            font-weight: bold;
+        }
+
+        .shahzal-rehman-text {
+            color: #f00;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Link Box Scrollable Container */
+        .link-box {
+            max-height: 100px;
+            overflow-y: auto;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .link-box a {
+            display: block;
+            padding: 5px 0;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link-box a:hover {
+            color: #00f;
+        }
+
+        /* Background Neon Sparks Animation */
+        .neon-sparks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .neon-spark {
+            position: absolute;
+            background-color: rgba(255, 0, 254, 0.8);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 0, 254, 0.8), 0 0 40px rgba(255, 0, 254, 0.8);
+            animation: sparkMove 5s linear infinite;
+        }
+
+        @keyframes sparkMove {
+            0% {
+                transform: translateY(0) scale(0.3);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-100vh) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .neon-text {
+                font-size: 15vw;
+            }
+        }
+ 
+    </style>
+</head>
+
+<body>
+
+    </div>
+    <!-- Neon Sparks Background -->
+    <div class="neon-sparks" id="neonSparks"></div>
+
+    <!-- Neon Text -->
+    <div id="neonText" class="neon-text">shahzal</div>
+    
+    <!-- Skill Box -->
+    <form id="shahzal">
+        <div class="skill-box wow fadeInUp animated" data-wow-delay=".8s">
+            <br>
+            <br><a href="https://my.shahzal.com" target="_blank" class="meta-address-btn" aria-label="Intro">WE With Wordpress</a>
+            <br> 
+            <a href="#" onclick="login()" class="login-btn"><i class="fas fa-sign-in-alt"></i> Connect With along with share.txt And product.xml</a>
+            <br>
+            <a href="#" onclick="signOut()" class="sign-out-btn"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+            <br>
+            <a href="#" onclick="openWhatsApp()" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Login with WhatsApp</a>
+            <br>
+             <br><a href="https://my.shahzal.com/Youngest Microsoft Pro at 15!.mp4" target="_blank" class="meta-address-btn" aria-label="Intro">Intro </a>
+ <br>
+ <br><a href="https://mvp.microsoft.com/en-US/studentambassadors/profile/e35e0c4c-5d79-454a-8d8d-cb75c8b016fc?wt.mc_id=studentamb_281705" target="_blank" class="meta-address-btn" aria-label="MVP Porfolio">MVP Porfolio </a>
+ <br>
+<br><a href="https://my.shahzal.com/blogs" target="_blank" class="meta-address-btn" aria-label="Blogs">Chief Bolg </a>
+ <br>
+   <br><a href="https://my.shahzal.com/blend" target="_blank" class="meta-address-btn" aria-label="Blend">Blend </a>
+ <br>
+  <br><a href="https://my.shahzal.com/colour" target="_blank" class="meta-address-btn" aria-label="Colours">Colour Effect </a>
+ <br>
+   <br><a href="https://my.shahzal.com/colour/effect.html" target="_blank" class="meta-address-btn" aria-label="Effects">Effects </a>
+ <br>
+  <br><a href="https://my.shahzal.com/colour/sketch.html" target="_blank" class="meta-address-btn" aria-label="Sketch">Sketch </a>
+ <br>
+  <br><a href="https://purple-tree-026ae2e10.5.azurestaticapps.net/" target="_blank" class="meta-address-btn" aria-label="Recylcing">recycling.html </a>
+ <br>
+ 
+ <br><a href="https://brave-plant-0df5a7c1e.5.azurestaticapps.net/" target="_blank" class="meta-address-btn" aria-label="Porfolio">Porfolio </a>
+ <br>
+  <br><a href="https://delightful-ocean-00ca65510.5.azurestaticapps.net" target="_blank" class="meta-address-btn" aria-label="PGC Crack">PGC Crack </a>
+ <br>
+  <br><a href="https://gentle-pebble-01e938610.4.azurestaticapps.net/" target="_blank" class="meta-address-btn" aria-label="ORG">ORG </a>
+ <br>
+   <br><a href="https://gray-beach-0792e3b10.5.azurestaticapps.net/" target="_blank" class="meta-address-btn" aria-label="Resume Style">Resume Style </a>
+ <br>
+
+                   <a href="https://my.shahzal.com/deck.pptx" target="_blank" class="meta-address-btn" aria-label="Deck PPTX">Deck PPTX</a><br>
+            <a href="https://my.shahzal.com/deck1.pptx" target="_blank" class="meta-address-btn" aria-label="Deck 1 PPTX">Deck 1 PPTX</a><br>
+<a href="https://my.shahzal.com/windows.pptx" target="_blank" class="meta-address-btn" aria-label="Deck 1 PPTX">Windows PPTX</a><br>
+            <a href="https://my.shahzal.com/meta.txt" target="_blank" class="meta-address-btn" aria-label="Our Meta Addresses">Meta Addresses</a>
+<a href="https://my.shahzal.com/srmapofmain.txt" target="_blank" class="meta-address-btn" aria-label="Main Map">Main MAP</a>
+<a href="https://my.shahzal.com/map.txt" target="_blank" class="meta-address-btn" aria-label="Map">MAP.txt </a>
+<br>
+ <br><a href="https://my.shahzal.com/pass.txt" target="_blank" class="meta-address-btn" aria-label="Intro">Accounts To sign in</a>
+        </div>
+    </form>
+
+    <!-- Powered by Section -->
+    <div class="powered-by-container">
+        <p class="powered-by-text">Powered by shahzal.com</p>
+        <p class="shahzal-rehman-text">Shahzal Rehman</p>
+<p class="Powered-by-text">Donotreply@shahzal.com</p>
+    </div>
+<script>
+    // JavaScript to control the display after 10 seconds
+    setTimeout(function () {
+        document.getElementById('neonText').style.display = 'none';
+        document.getElementById('shahzal').style.display = 'block';
+    }, 10000);
+
+    // Creating random neon sparks
+    function createNeonSparks(numSparks) {
+        const neonSparksContainer = document.getElementById('neonSparks');
+        for (let i = 0; i < numSparks; i++) {
+            const spark = document.createElement('div');
+            spark.classList.add('neon-spark');
+            spark.style.width = `${Math.random() * 10 + 5}px`;
+            spark.style.height = `${Math.random() * 10 + 5}px`;
+            spark.style.left = `${Math.random() * 100}%`;
+            spark.style.top = `${Math.random() * 100}%`;
+            spark.style.animationDuration = `${Math.random() * 3 + 2}s`;
+            neonSparksContainer.appendChild(spark);
+        }
+    }
+
+    // Call the function to create neon sparks
+    createNeonSparks(70);
+
+    function login() {
+        var clientId = "9ec16646-a913-4fdb-8249-08fb1d98b99d";
+        var redirectUri = encodeURIComponent("https://my.shahzal.com/home");
+        var authority = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize";
+        var scope = "user.read";
+        var loginUrl = `${authority}?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=${scope}`;
+        window.open(loginUrl, "_blank", "noopener,noreferrer");
+    }
+
+    function signOut() {
+        var clientId = "9ec16646-a913-4fdb-8249-08fb1d98b99d";
+        var postLogoutRedirectUri = encodeURIComponent("https://my.shahzal.com");
+        var authority = "https://login.microsoftonline.com/common/oauth2/v2.0/logout";
+        var url = `${authority}?post_logout_redirect_uri=${postLogoutRedirectUri}`;
+        window.location.href = url;
+    }
+
+    function openWhatsApp() {
+        var urls = [
+            "https://chat.whatsapp.com/Djp2Wfn7gjT5x5MuYSuclt",
+            "https://chat.whatsapp.com/GZWAi6ea7mh0IVpnACMh3t",
+            "https://chat.whatsapp.com/KcKHRbjuSAo7NbBuZEf6GI"
+        ];
+
+        urls.forEach((url, index) => {
+            setTimeout(() => {
+                window.open(url, '_blank', 'noopener,noreferrer');
+            }, index * 500); // Adjust the delay as needed
+        });
+    }
+</script>
+
+</body>
+
+</html>

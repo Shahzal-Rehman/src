@@ -1,0 +1,135 @@
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .page-section-1.bg-blue .section-title .widgettitle {
+        width: 216px;
+        font-size: 77px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .top-banner .wpb_wrapper .banner-caption .wpb_wrapper h1 {
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .top-banner .wpb_wrapper .banner-caption .wpb_wrapper h2 {
+        font-size: 23px;
+    }
+    .prizes-wrp .vc_custom_heading {
+        font-size: 38px !important;
+    }
+    .prizes {
+        margin: 0;
+    }
+    .prize-box {
+        width: 100%;
+        margin: 0 10px;
+    }
+    .prize-box .prize-text {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .prize-amount {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .section-title {
+        padding: 0 15px;
+    }
+    .section-title .textwidget{
+        overflow: visible;
+    }
+    .section-title .textwidget p:nth-child(1) {
+        font-size: 29px;
+        line-height: 31px;
+    }
+    .section-title .textwidget p:nth-child(2) {
+        font-size: 18px;
+        margin: 0;
+    }
+    .detail-text {
+        padding: 0 15px !important;
+    }
+    .section-title .widgettitle {
+        font-size: 70px;
+        margin: 0 15px 0 0;
+    }
+    .custom-order-list ol {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .top-banner .wpb_wrapper .banner-caption .wpb_wrapper h1 {
+        font-size: 23px;
+        line-height: 26px;
+    }
+    .top-banner .wpb_wrapper .banner-caption .wpb_wrapper h2 {
+        font-size: 15px;
+    }
+    .prizes-wrp .vc_custom_heading {
+        font-size: 38px !important;
+    }
+    .prizes {
+        flex-direction: column;
+    }
+    .prize-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .section-title {
+        padding: 0 15px;
+    }
+    .section-title .textwidget{
+        overflow: visible;
+    }
+    .section-title .textwidget p:nth-child(1) {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .section-title .textwidget p:nth-child(2) {
+        font-size: 18px;
+        margin: 0;
+    }
+    .detail-text {
+        padding: 0 15px !important;
+    }
+    .section-title .widgettitle {
+        font-size: 60px;
+        margin: 0 15px 0 0;
+        top: 0;
+    }
+    .detail-text .wpb_wrapper ul li {
+        font-size: 20px;
+    }
+    .detail-text .wpb_wrapper p {
+        font-size: 23px;
+        line-height: 26px;
+    }
+    .top-banner .wpb_wrapper .banner-caption .wpb_wrapper {
+        top: auto;
+        bottom: 8px;
+        padding: 0 3.5rem;
+        transform: initial;
+    }
+    .custom-order-list ol {
+        width: 100% !important;
+    }
+    .custom-order-list ol li {
+        width: 100%;
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+    .custom-order-list.normal-list ol li {
+        font-size: 22px !important;
+        line-height: 26px !important;
+    }
+    .page-section-1 .section-title .widgettitle {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 479px) {
+    
+}

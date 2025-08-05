@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZiroZero Z Logo</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      white-space: pre;
+      overflow: hidden;
+    }
+    #ascii {
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: 1px;
+      text-shadow: 0 0 4px #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="ascii"></div>
+
+  <script>
+    const asciiLogo = `
+     ...........
+     ...........
+     .       ..
+.........  ..
+......... ..
+.     .. ..
+     .. ..
+    .. ..
+   ...........
+   ...........`;
+
+    const asciiDiv = document.getElementById("ascii");
+    let i = 0;
+
+    function typeAscii() {
+      if (i < asciiLogo.length) {
+        asciiDiv.textContent += asciiLogo[i];
+        i++;
+        setTimeout(typeAscii, 0.5); // typing speed
+      }
+    }
+
+    typeAscii();
+  </script>
+</body>
+</html>
