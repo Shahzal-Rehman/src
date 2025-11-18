@@ -1,0 +1,30 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnose-size:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Show workspace size and largest files
+        run: |
+          echo "Workspace path: $GITHUB_WORKSPACE"
+          echo "=== Total working-tree size ==="
+          du -sb . | awk '{print $1 " bytes (" ($1/1024/1024) " MiB)"}'
+          du -sh . || true
+          echo
+          echo "=== Top 100 largest files ==="
+          find . -type f -exec du -b {} + | sort -nr | head -n 100 | awk '{printf("%12s bytes  %s\n",$1,$2)}'
+          echo
+          echo "=== Files > 5MB ==="
+          find . -type f -size +5M -exec ls -lh {} \; | awk '{print $5, $9}'
+          echo
+          echo "=== Sum of all file sizes (sanity check) ==="
+          find . -type f -printf "%s\n" | awk '{s+=$1} END {printf("%d bytes (%0.2f MiB)\n", s, s/1024/1024)}'
+          echo
+          echo "=== Git LFS summary (if used) ==="
+          if command -v git-lfs >/dev/null 2>&1; then git lfs ls-files || true; else echo "git-lfs not installed"; fi
