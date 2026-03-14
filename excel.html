@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>shahzal Secure Downloads</title>
+<title>Shahzal Secure Downloads</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -54,29 +54,19 @@ button:hover, .skill-box a:hover {background-color:#0056b3; transform:scale(1.05
 
 <div id="shahzal">
     <h2 id="welcomeText">Welcome!</h2>
-    
-    <div id="filesSection" style="display:none;">
-     <a href="#" onclick="openWhatsApp()" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Download Ur Files Sir..</a>
-        </div>
+    <div id="filesSection" class="skill-box">
+        <a href="#" onclick="downloadFiles()" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Download Ur Files Sir..</a>
     </div>
-
     <button onclick="signOut()"><i class="fas fa-sign-out-alt"></i> Sign Out</button>
 </div>
 
 <script>
-const clientId = "06ba086d-2433-47a5-b9b7-dd3196ce7cd4"; // shahzal MS tenant client ID
+const clientId = "06ba086d-2433-47a5-b9b7-dd3196ce7cd4";
 const redirectUri = "https://shahzal.org/excel.html"; 
 const authority = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize";
 const logoutUri = "https://login.microsoftonline.com/common/oauth2/v2.0/logout?post_logout_redirect_uri=https://shahzal.org";
 
-// Check if user is returning from Microsoft login
-function getUrlParameter(name) {
-    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-    const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    const results = regex.exec(window.location.search);
-    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-}
-
+// Automatically redirect to Microsoft login if not logged in
 function login() {
     const scope = "user.read";
     const loginUrl = `${authority}?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scope}`;
@@ -84,51 +74,53 @@ function login() {
 }
 
 function signOut() {
+    localStorage.removeItem("ms_token");
     window.location.href = logoutUri;
 }
 
-// Check if access token exists in URL hash
-window.onload = function() {
-    const hash = window.location.hash; // token comes in #access_token=...
-    if(hash.includes("access_token")) {
-        // User just logged in
-        localStorage.setItem("ms_token", hash);
-        showshahzal();
-    } else if(localStorage.getItem("ms_token")) {
-        // Already logged in previously
-        showshahzal();
-    } else {
-        // Not logged in, redirect to Microsoft login
-        login();
-    }
-}
-
-   function openWhatsApp() {
-            var urls = [
-                "https://shahzal.org/excel/Book1.xlsx",
-               "https://shahzal.org/excel/Book2.xlsx",
-               "https://shahzal.org/excel/Book3.xlsx",
-               "https://shahzal.org/excel/Book4.xlsx",
-               "https://shahzal.org/excel/Book5.xlsx",
-               "https://shahzal.org/excel/Book6.xlsx",
-                "https://shahzal.org/excel/Book7.xlsx",
-               "https://shahzal.org/excel/Book8.xlsx",
-               "https://shahzal.org/excel/Book9.xlsx",
-               "https://shahzal.org/excel/Book10.xlsx",
-               "https://shahzal.org/excel/Book11.xlsx",
-               
-               
-            ];
-        urls.forEach(function(url) {
-                window.open(url, "_blank", "noopener,noreferrer");
-            });
-        
-// Show the neon glass block with files
-function showshahzal() {
+// Show the glass block
+function showShahzal() {
     document.getElementById("shahzal").style.display = "block";
     document.getElementById("filesSection").style.display = "block";
     document.getElementById("welcomeText").innerText = "Welcome, Microsoft User! You may download files below.";
-    
+}
+
+// Trigger multiple file downloads
+function downloadFiles() {
+    const urls = [
+        "https://shahzal.org/excel/Book1.xlsx",
+        "https://shahzal.org/excel/Book2.xlsx",
+        "https://shahzal.org/excel/Book3.xlsx",
+        "https://shahzal.org/excel/Book4.xlsx",
+        "https://shahzal.org/excel/Book5.xlsx",
+        "https://shahzal.org/excel/Book6.xlsx",
+        "https://shahzal.org/excel/Book7.xlsx",
+        "https://shahzal.org/excel/Book8.xlsx",
+        "https://shahzal.org/excel/Book9.xlsx",
+        "https://shahzal.org/excel/Book10.xlsx",
+        "https://shahzal.org/excel/Book11.xlsx"
+    ];
+    urls.forEach(url => {
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = url.split('/').pop();
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+    });
+}
+
+// Check login state
+window.onload = function() {
+    const hash = window.location.hash;
+    if(hash.includes("access_token")) {
+        localStorage.setItem("ms_token", hash);
+        showShahzal();
+    } else if(localStorage.getItem("ms_token")) {
+        showShahzal();
+    } else {
+        login();
+    }
 }
 </script>
 
