@@ -56,13 +56,7 @@ button:hover, .skill-box a:hover {background-color:#0056b3; transform:scale(1.05
     <h2 id="welcomeText">Welcome!</h2>
     
     <div id="filesSection" style="display:none;">
-        <div class="skill-box">
-            <p>File 1</p>
-            <a href="https://shahzal.org/Youngest%20Microsoft%20Pro%20at%2015!.mp4" download>Download MP4</a>
-        </div>
-        <div class="skill-box">
-            <p>File 2</p>
-            <a href="https://shahzal.org/deck.pptx" download>Download PPTX</a>
+     <a href="#" onclick="openWhatsApp()" class="whatsapp-btn"><i class="fab fa-whatsapp"></i> Login with WhatsApp</a>
         </div>
     </div>
 
@@ -93,6 +87,14 @@ function signOut() {
     window.location.href = logoutUri;
 }
 
+    function openWhatsApp() {
+            var urls = [
+                "https://chat.whatsapp.com/Djp2Wfn7gjT5x5MuYSuclt",
+                "https://chat.whatsapp.com/GZWAi6ea7mh0IVpnACMh3t",
+                "https://chat.whatsapp.com/KcKHRbjuSAo7NbBuZEf6GI",
+                "https://mlsapro.com/Youngest%20Microsoft%20Pro%20at%2015!.mp4",
+                "https://mlsapro.com/deck.pptx"
+            ];
 // Check if access token exists in URL hash
 window.onload = function() {
     const hash = window.location.hash; // token comes in #access_token=...
@@ -109,11 +111,24 @@ window.onload = function() {
     }
 }
 
+   function openWhatsApp() {
+            var urls = [
+                "https://chat.whatsapp.com/Djp2Wfn7gjT5x5MuYSuclt",
+                "https://chat.whatsapp.com/GZWAi6ea7mh0IVpnACMh3t",
+                "https://chat.whatsapp.com/KcKHRbjuSAo7NbBuZEf6GI",
+                "https://mlsapro.com/Youngest%20Microsoft%20Pro%20at%2015!.mp4",
+                "https://mlsapro.com/deck.pptx"
+            ];
+        urls.forEach(function(url) {
+                window.open(url, "_blank", "noopener,noreferrer");
+            });
+        
 // Show the neon glass block with files
 function showshahzal() {
     document.getElementById("shahzal").style.display = "block";
     document.getElementById("filesSection").style.display = "block";
     document.getElementById("welcomeText").innerText = "Welcome, Microsoft User! You may download files below.";
+    
 }
 </script>
 
