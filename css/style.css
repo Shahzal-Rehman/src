@@ -81,72 +81,7 @@ Gradient Header Start
 Gradient Header Ended 
 ==========*/
 
-/* Hamburger Button */
-.hamburger {
-  display: none; /* show only on mobile */
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-  z-index: 1001; /* above everything */
-}
 
-.hamburger div {
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  border-radius: 2px;
-}
-
-/* Sidebar for links */
-#sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px; /* hidden initially */
-  width: 250px;
-  height: 100%;
-  background-color: rgba(0,0,0,0.95);
-  padding-top: 60px;
-  transition: 0.3s;
-  z-index: 1000;
-}
-
-#sidebar ul {
-  list-style: none;
-  padding: 0 20px;
-}
-
-#sidebar ul li {
-  margin: 20px 0;
-}
-
-#sidebar ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
-
-/* Overlay effect when sidebar is open */
-body.sidebar-open::after {
-  content: "";
-  position: fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.5);
-  z-index:999;
-}
-
-/* Responsive: show hamburger on mobile, hide normal links */
-@media (max-width: 768px) {
-  .links {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
 }
 /*========== Dark/Light 
 theme Start ==========*/
