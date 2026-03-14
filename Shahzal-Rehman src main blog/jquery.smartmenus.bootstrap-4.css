@@ -1,0 +1,315 @@
+/*
+Theme Name: NewsExo Pro
+Author: ThemeArile 
+Copyright (c) 2024 NewsExo Pro
+http://www.themearile.com
+Name: jquery.smartmenus.bootstrap-4.css
+*/
+
+/* Carets in collapsible mode (make them look like +/- buttons) */
+
+.navbar { 
+	background-color: #fff;
+	padding: 2rem 0;
+	opacity: 1;
+	min-height: 50px;
+	z-index: 3;  
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+}
+.m-right-auto {
+    margin-right: unset!important;
+    margin-left: auto;
+}
+.navbar>.container {
+    display: block;
+}
+
+/*Navbar Dark Css*/
+.navbar-dark { 
+	background-color: #13171e; 
+}
+.navbar.navbar-dark .nav {
+	margin-left: 0;
+}
+.navbar.navbar-dark .nav .menu-item .nav-link {
+    font-weight: 600;
+    color: #fff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 0 1.125rem;
+	letter-spacing: 0.01rem;
+}
+/*Navbar Dropdown Dark Css*/
+.navbar.navbar-dark .nav .dropdown-menu { 
+	border-radius: 0;
+	border: none;
+	padding: 0.438rem 0.625rem;
+	font-size: 1rem;
+}
+.navbar.navbar-dark .nav .dropdown-item {
+	padding: 0rem 0.75rem;
+	line-height: 2.5;
+}  
+.navbar.navbar-dark .nav .dropdown-item.active, 
+.navbar.navbar-dark .nav .dropdown-item:active {
+    color: #fff;
+    background-color: transparent;
+}
+.navbar.navbar-dark .nav .dropdown-menu > .menu-item > ul.dropdown-menu > .menu-item > .dropdown-item {
+	color: #fff;
+}
+/*Navbar Dark Toggle Button*/
+.navbar.navbar-dark .navbar-toggler {
+	border-color: rgba(255, 255, 255, 1);
+	border-radius: 0;
+	padding: 0.25rem 0.75rem;
+	border: 1px solid #fff;
+}
+.navbar.navbar-dark .navbar-toggler:hover, 
+.navbar.navbar-dark .navbar-toggler:focus {
+	background-color: transparent;	
+}  
+.navbar.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar.navbar-dark .navbar-toggler-icon {
+    width: 1.8rem;
+}
+
+/*Navbar Light Toggle Button*/
+.navbar.navbar-light .navbar-toggler {
+	border-color: #13171e;
+	border-radius: 0;
+	padding: 0.25rem 0.75rem;
+}
+.navbar.navbar-light .navbar-toggler:hover, 
+.navbar.navbar-light .navbar-toggler:focus {
+	background-color: transparent;	
+}  
+.navbar.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar.navbar-light .navbar-toggler-icon {
+    width: 1.8rem;
+}
+
+/*Header Sticky*/
+.header-fixed-top {
+	position: fixed;
+	top:0; 
+	left:0;
+	width: 100%; 
+	z-index: 3;
+	box-shadow: 0 8px 20px 0 rgba(0,0,0,.1);
+	opacity: 1;
+	-webkit-animation: slide-down 1.07s;
+	animation: slide-down 1.07s;
+}
+@keyframes slide-down {
+    0% {
+        opacity: 1;
+        transform: translateY(-100%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
+
+@media (max-width: 991px) {
+	.navbar { 
+		padding: 1rem 0;
+	}
+	.navbar .nav {	
+		margin-top: 20px;
+		margin-left: 0;
+		position: relative;
+	}
+	.navbar-collapse {
+		max-height: 400px;
+		overflow-x: hidden;
+	}
+	/*Navbar Dark Css*/
+	.navbar.navbar-dark .navbar-toggler {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.navbar.navbar-dark .nav .menu-item .nav-link {
+		padding-left: 0; 
+		padding-right: 0;
+	}	
+	.navbar.navbar-dark .nav .menu-item:hover .nav-link, 
+	.navbar.navbar-dark .nav .menu-item.active .nav-link {
+		background-color: transparent;
+	}	
+	.navbar.navbar-dark .nav .menu-item .nav-link {
+		line-height: 3.125;
+		font-size: 1rem;
+		margin-right: 0;
+		display: block;
+		border-bottom: 1px solid rgba(255,255,255,0.05);
+		border-radius: 0;
+	}
+	.navbar.navbar-dark .nav .dropdown-item { 
+		line-height: 3;
+	}
+	.navbar.navbar-dark .nav .dropdown-menu { 
+		background-color: transparent;
+	}
+	.navbar.navbar-dark .nav .dropdown-menu .dropdown-item { 
+		color: #fff;
+	}
+	.navbar.navbar-dark .nav .dropdown-menu .dropdown-item:hover, 
+	.navbar.navbar-dark .nav .dropdown-menu .dropdown-item:focus	{ 
+		background-color: transparent;
+	}
+}
+	
+@media (min-width: 992px) {
+	.navbar { 
+		padding-top: 0rem;
+		padding-bottom: 0rem;
+	}
+	.navbar .nav {
+		padding-top: 0;
+	}
+	.navbar .nav .menu-item .nav-link {
+		line-height: 3.125;
+	}
+	.navbar.navbar-dark .nav .menu-item:hover .nav-link, 
+	.navbar.navbar-dark .nav .menu-item.active .nav-link {
+		background-color: #fff;
+		color: #13171e;
+	}
+	/*Navbar Dark Css*/
+	.navbar.navbar-dark .nav .dropdown-menu { 
+		background-color: #13171e; 
+		box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 12px 0 rgba(0, 0, 0, 0.12); 
+	}
+	.navbar.navbar-dark .nav .dropdown-item {
+		color: rgba(255, 255, 255, 0.9);
+	} 
+	.navbar.navbar-dark .nav .dropdown-item:focus, 
+	.navbar.navbar-dark .nav .dropdown-item:hover {
+		background-color: transparent;
+	}
+}
+/*End Css*/
+
+.navbar-nav.sm-collapsible .sub-arrow {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin: -0.7em 0em 0 0;
+	border: 1px solid rgba(255,255,255,0.05);
+	border-radius: 0;
+	padding: 0;
+	width: 2em;
+	height: 1.4em;
+	font-size: 1.25rem;
+	line-height: 1.2em;
+	text-align: center;
+}
+.navbar-nav.sm-collapsible .sub-arrow::before {
+	content: '+';
+}
+.navbar-nav.sm-collapsible .show > a > .sub-arrow::before {
+	content: '-';
+}
+.navbar-dark .navbar-nav.sm-collapsible .nav-link .sub-arrow {
+	border-color: rgba(255, 255, 255, .1);
+}
+/* make sure there's room for the carets */
+.navbar-nav.sm-collapsible .has-submenu {
+	padding-right: 3em;
+}
+/* keep the carets properly positioned */
+.navbar-nav.sm-collapsible .nav-link,
+.navbar-nav.sm-collapsible .dropdown-item {
+	position: relative;
+}
+
+/* Nav carets in expanded mode */
+.navbar-nav:not(.sm-collapsible) .nav-link .sub-arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin-left: .255em;
+	vertical-align: .255em;
+	border-top: .3em solid;
+	border-right: .3em solid transparent;
+	border-left: .3em solid transparent;
+}
+/* point the arrows up for .fixed-bottom navbars */
+.fixed-bottom .navbar-nav:not(.sm-collapsible) .nav-link .sub-arrow,
+.fixed-bottom .navbar-nav:not(.sm-collapsible):not([data-sm-skip]) .dropdown-toggle::after {
+	border-top: 0;
+	border-bottom: .3em solid;
+}
+
+/* Dropdown carets in expanded mode */
+.navbar-nav:not(.sm-collapsible) .dropdown-item .sub-arrow,
+.navbar-nav:not(.sm-collapsible):not([data-sm-skip]) .dropdown-menu .dropdown-toggle::after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 0;
+	height: 0;
+	margin-top: -.3em;
+	margin-right: 1em;
+	border-top: .3em solid transparent;
+	border-bottom: .3em solid transparent;
+	border-left: .3em solid;
+}
+/* make sure there's room for the carets */
+.navbar-nav:not(.sm-collapsible) .dropdown-item.has-submenu {
+	padding-right: 2em;
+}
+
+/* Scrolling arrows for tall menus */
+.navbar-nav .scroll-up,
+.navbar-nav .scroll-down {
+	position: absolute;
+	display: none;
+	visibility: hidden;
+	height: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+.navbar-nav .scroll-up-arrow,
+.navbar-nav .scroll-down-arrow {
+	position: absolute;
+	top: -2px;
+	left: 50%;
+	margin-left: -8px;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid;
+	border-left: 7px solid transparent;
+}
+.navbar-nav .scroll-down-arrow {
+	top: 6px;
+	border-top: 7px solid;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	border-left: 7px solid transparent;
+}
+
+
+/* Add some spacing for 2+ level sub menus in collapsible mode */
+.navbar-nav.sm-collapsible .dropdown-menu .dropdown-menu {
+	margin: .5em;
+}
+
+
+/* Fix SmartMenus sub menus auto width (subMenusMinWidth/subMenusMaxWidth options) */
+.navbar-nav:not([data-sm-skip]) .dropdown-item {
+	white-space: normal;
+}
+.navbar-nav:not(.sm-collapsible) .sm-nowrap > li > .dropdown-item {
+	white-space: nowrap;
+}
