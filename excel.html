@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MLSAPRO Secure Downloads</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://mlsapro.com/img/shapes/wavy-shape1.png') no-repeat center center fixed;
+    background-size: cover;
+    margin:0; padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:#fff;
+    overflow:hidden;
+    flex-direction:column;
+}
+
+#mlsapro {
+    display:none;
+    width:80%;
+    max-width:700px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    overflow:auto;
+    max-height:80vh;
+}
+
+button, .skill-box a {
+    display:inline-block;
+    padding:15px 30px;
+    margin:10px;
+    background-color:#007bff;
+    color:#fff;
+    text-decoration:none;
+    border-radius:25px;
+    transition:0.3s;
+    font-size:16px;
+}
+button:hover, .skill-box a:hover {background-color:#0056b3; transform:scale(1.05);}
+.skill-box i {margin-right:8px;}
+</style>
+</head>
+<body>
+
+<div id="mlsapro">
+    <h2 id="welcomeText">Welcome!</h2>
+    
+    <div id="filesSection" style="display:none;">
+        <div class="skill-box">
+            <p>File 1</p>
+            <a href="https://mlsapro.com/Youngest%20Microsoft%20Pro%20at%2015!.mp4" download>Download MP4</a>
+        </div>
+        <div class="skill-box">
+            <p>File 2</p>
+            <a href="https://mlsapro.com/deck.pptx" download>Download PPTX</a>
+        </div>
+    </div>
+
+    <button onclick="signOut()"><i class="fas fa-sign-out-alt"></i> Sign Out</button>
+</div>
+
+<script>
+const clientId = "9ec16646-a913-4fdb-8249-08fb1d98b99d"; // MLSAPRO MS tenant client ID
+const redirectUri = "https://mlsapro.com/home"; // Change to your page after login
+const authority = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize";
+const logoutUri = "https://login.microsoftonline.com/common/oauth2/v2.0/logout?post_logout_redirect_uri=https://mlsapro.com";
+
+// Check if user is returning from Microsoft login
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    const results = regex.exec(window.location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
+
+function login() {
+    const scope = "user.read";
+    const loginUrl = `${authority}?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scope}`;
+    window.location.href = loginUrl;
+}
+
+function signOut() {
+    window.location.href = logoutUri;
+}
+
+// Check if access token exists in URL hash
+window.onload = function() {
+    const hash = window.location.hash; // token comes in #access_token=...
+    if(hash.includes("access_token")) {
+        // User just logged in
+        localStorage.setItem("ms_token", hash);
+        showMLSAPro();
+    } else if(localStorage.getItem("ms_token")) {
+        // Already logged in previously
+        showMLSAPro();
+    } else {
+        // Not logged in, redirect to Microsoft login
+        login();
+    }
+}
+
+// Show the neon glass block with files
+function showMLSAPro() {
+    document.getElementById("mlsapro").style.display = "block";
+    document.getElementById("filesSection").style.display = "block";
+    document.getElementById("welcomeText").innerText = "Welcome, Microsoft User! You may download files below.";
+}
+</script>
+
+</body>
+</html>
