@@ -1093,189 +1093,131 @@ article.type-campus {
 	}
 	</style>
 
-	
 <style>
 #sidebar-wrapper {
-
-	/*overflow: scroll;*/
+    /* overflow: scroll; */
 }
-</style><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><style type="text/css">.js-slide-hidden{position:absolute !important;left:-9999px !important;top:-9999px !important;display:block !important}</style><style data-jss="" data-meta="MuiDialog">
-@media print {
-  .MuiDialog-root {
+
+/* Hide submenu properly */
+.js-slide-hidden {
     position: absolute !important;
-  }
+    left: -9999px !important;
+    top: -9999px !important;
+    display: block !important;
 }
-.MuiDialog-scrollPaper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.MuiDialog-scrollBody {
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: center;
-}
-.MuiDialog-scrollBody:after {
-  width: 0;
-  height: 100%;
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-}
-.MuiDialog-container {
-  height: 100%;
-  outline: 0;
-}
-@media print {
-  .MuiDialog-container {
-    height: auto;
-  }
-}
-.MuiDialog-paper {
-  margin: 32px;
-  position: relative;
-  overflow-y: auto;
-}
-@media print {
-  .MuiDialog-paper {
-    box-shadow: none;
-    overflow-y: visible;
-  }
-}
-.MuiDialog-paperScrollPaper {
-  display: flex;
-  max-height: calc(100% - 64px);
-  flex-direction: column;
-}
-.MuiDialog-paperScrollBody {
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
-}
-.MuiDialog-paperWidthFalse {
-  max-width: calc(100% - 64px);
-}
-.MuiDialog-paperWidthXs {
-  max-width: 444px;
-}
-@media (max-width:507.95px) {
-  .MuiDialog-paperWidthXs.MuiDialog-paperScrollBody {
-    max-width: calc(100% - 64px);
-  }
-}
-.MuiDialog-paperWidthSm {
-  max-width: 600px;
-}
-@media (max-width:663.95px) {
-  .MuiDialog-paperWidthSm.MuiDialog-paperScrollBody {
-    max-width: calc(100% - 64px);
-  }
-}
-.MuiDialog-paperWidthMd {
-  max-width: 960px;
-}
-@media (max-width:1023.95px) {
-  .MuiDialog-paperWidthMd.MuiDialog-paperScrollBody {
-    max-width: calc(100% - 64px);
-  }
-}
-.MuiDialog-paperWidthLg {
-  max-width: 1280px;
-}
-@media (max-width:1343.95px) {
-  .MuiDialog-paperWidthLg.MuiDialog-paperScrollBody {
-    max-width: calc(100% - 64px);
-  }
-}
-.MuiDialog-paperWidthXl {
-  max-width: 1920px;
-}
-@media (max-width:1983.95px) {
-  .MuiDialog-paperWidthXl.MuiDialog-paperScrollBody {
-    max-width: calc(100% - 64px);
-  }
-}
-.MuiDialog-paperFullWidth {
-  width: calc(100% - 64px);
-}
-.MuiDialog-paperFullScreen {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  max-width: 100%;
-  max-height: none;
-  border-radius: 0;
-}
-.MuiDialog-paperFullScreen.MuiDialog-paperScrollBody {
-  margin: 0;
-  max-width: 100%;
-}
-</style><script type="text/javascript" src="./Shahzal_files/all-js.js.download"></script><style id="monica-reading-highlight-style">
-        .monica-reading-highlight {
-          animation: fadeInOut 1.5s ease-in-out;
-        }
 
-        @keyframes fadeInOut {
-          0%, 100% { background-color: transparent; }
-          30%, 70% { background-color: rgba(2, 118, 255, 0.20); }
-        }
-      </style></head>
+/* REMOVE WHITE BACKGROUND ISSUE */
+.header,
+.container,
+.logo img,
+.nav-opener {
+    background: transparent !important;
+}
+
+/* Fix hamburger lines */
+.nav-opener span,
+.nav-opener span::before,
+.nav-opener span::after {
+    background: #000; /* change to white if needed */
+}
+</style>
 
 
-<body class="home page-template page-template-full-page-template page-template-full-page-template-php page page-id-22 no-sidebar wpb-js-composer js-comp-ver-7.8 vc_responsive sticky-header" monica-id="ofpnmcalabcbjgholdjcjblkibolbppb" monica-version="7.3.0">
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9F7S27" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-	<div id="wrapper">
-		<header class="header">
-			<div class="container">
-				<strong class="logo">
-					<a href="https://shahzal.org/">
-						<img class="logo-white" src="./Shahzal_files/s.png" alt="Shahzal">
-						<img class="logo-colored" src="./Shahzal_files/s.png" alt="Shahzal">
-					</a>
-				</strong>
-				<a href="https://shahzal.org/#" class="nav-opener"><span></span></a>
-<div class="menu-wrapper">
+<body class="home page-template page-template-full-page-template page-template-full-page-template-php page page-id-22 no-sidebar wpb-js-composer vc_responsive sticky-header">
 
-					<div class="main-menu">
-						<a href="https://shahzal.org/#" class="nav-close"></a>
-						<ul id="menu-menu-1" class="navigation"><li id="menu-item-6156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6156"><a href="mailto:shahzalrehman0302@gmail.com">About us</a></li>
-<li id="menu-item-674" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-674"><a href="mailto:shahzalrehman0302@gmail.com">contact now</a>
-<ul class="sub-menu js-slide-hidden">
-	<li id="menu-item-31792" class="onlineadmision menu-item menu-item-type-custom menu-item-object-custom menu-item-31792"><a href="https://my.shahzal.org/colour">Colour</a></li>
-	<li id="menu-item-336" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-336"><a href="https://my.shahzal.org/blend">Blend</a></li>
-</ul>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9F7S27"
+        height="0" width="0"
+        style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
 
-</ul>					</div>
-				</div>
-			</div>
+<div id="wrapper">
 
-						</header>
+<header class="header">
+    <div class="container">
 
+        <strong class="logo">
+            <a href="https://shahzal.org/">
+                <img class="logo-white" src="./Shahzal_files/s.png" alt="Shahzal">
+                <img class="logo-colored" src="./Shahzal_files/s.png" alt="Shahzal">
+            </a>
+        </strong>
 
-				<style>
-		.fulllall {
-			display: none !important;
-		}
-		</style>
+        <a href="#" class="nav-opener"><span></span></a>
 
+        <div class="menu-wrapper">
+            <div class="main-menu">
 
-		<div class="wpb-content-wrapper"><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">	<div class="visual-block">
-		<div class="visual-slider slick-initialized slick-slider slick-dotted">
-				<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 20933px; transform: translate3d(-5709px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 1903px;" tabindex="-1">
-        <div class="container">
-            <div class="textbox">
-                <h1><span></span> </h1>
-                <p></p>
+                <a href="#" class="nav-close"></a>
+
+                <ul id="menu-menu-1" class="navigation">
+
+                    <li class="menu-item">
+                        <a href="mailto:shahzalrehman0302@gmail.com">About us</a>
+                    </li>
+
+                    <li class="menu-item menu-item-has-children">
+                        <a href="mailto:shahzalrehman0302@gmail.com">Contact now</a>
+
+                        <ul class="sub-menu js-slide-hidden">
+                            <li class="menu-item">
+                                <a href="https://my.shahzal.org/colour">Colour</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="https://my.shahzal.org/blend">Blend</a>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
             </div>
         </div>
-        <div class="image-holder aamir-1">
-            <img decoding="async" src="./Shahzal_files/03.png" alt="">
-            
-        </div>
-    </div><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1903px;" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" tabindex="-1">
+
+    </div>
+</header>
+
+
+<style>
+.fulllall {
+    display: none !important;
+}
+</style>
+
+
+<div class="wpb-content-wrapper">
+<div class="vc_row wpb_row vc_row-fluid">
+<div class="wpb_column vc_column_container vc_col-sm-12">
+<div class="vc_column-inner">
+<div class="wpb_wrapper">
+
+<div class="visual-block">
+<div class="visual-slider">
+
+<div class="container">
+    <div class="textbox">
+        <h1><span></span></h1>
+        <p></p>
+    </div>
+</div>
+
+<div class="image-holder aamir-1">
+    <img src="./Shahzal_files/03.png" alt="">
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>	
+
+<div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1903px;" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" tabindex="-1">
         <div class="container">
             <div class="textbox">
                 <h1><span></span> </h1>
