@@ -45,11 +45,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahzal.org/colour/index.html</loc>
-    <lastmod>2024-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  
   <url>
     <loc>https://shahzal.org/colour/sketch.html</loc>
     <lastmod>2024-07-09</lastmod>
@@ -99,14 +95,8 @@
   <url>
     <loc>https://shahzal.org/blogs/image9.jpg</loc>
   </url>
-  <url>
-    <loc>https://shahzal.org/blogs/index.html</loc>
-  </url>
 
-  <!-- Contact Directory -->
-  <url>
-    <loc>https://shahzal.org/contact/index.html</loc>
-  </url>
+
 
   <!-- CSS Directory -->
   <url>
@@ -119,20 +109,6 @@
     <loc>https://shahzal.org/css/style.css</loc>
   </url>
 
-  <!-- Home Directory -->
-  <url>
-    <loc>https://shahzal.org/home/connectsrproducts.ps1</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/home/index.html</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/home/shahzal.orgshare.txt</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/home/sr.xml</loc>
-  </url>
-
   <!-- JS Directory -->
   <url>
     <loc>https://shahzal.org/js/app.js</loc>
@@ -141,71 +117,8 @@
     <loc>https://shahzal.org/js/isotope.pkgd.min.js</loc>
   </url>
   <url>
-    <loc>https://shahzal.org/js/new/</loc>
-  </url>
-  <url>
     <loc>https://shahzal.org/js/script.js</loc>
   </url>
-
-  <!-- PGC Directory -->
-  <url>
-    <loc>https://shahzal.org/pgc/1.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/10.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/11.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/12.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/2.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/20240502_103427_001.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/20240502_103430_001.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/3.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/4.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/5.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/6.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/7.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/8.jpg</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/pgc/9.jpg</loc>
-  </url>
-  <!-- Add all other files in PGC directory here -->
-
-  <!-- Sign Directory -->
-  <url>
-    <loc>https://shahzal.org/sign/1.png</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/sign/2.png</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/sign/3.png</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/sign/4.png</loc>
-  </url>
-  <!-- Add all other files in Sign directory here -->
 
   <!-- IMG Directory -->
   <url>
@@ -230,22 +143,6 @@
  <url> <loc>https://shahzal.org/img/Copy%20of%20Book4%20(2)%20(1).xlsx</loc> </url> 
  <url> <loc>https://shahzal.org/img/Copy%20of%20Book4%20(2).xlsx</loc> </url> 
  <url> <loc>https://shahzal.org/img/Copy%20of%20Book4%20(2).xlsx</loc> </url> 
- <url> <loc>https://shahzal.org/277FD000.xlsx</loc> </url> 
- 
-
-  <!-- Add all other files in IMG directory here -->
-
-  <!-- GitHub Directory -->
-  <url>
-    <loc>https://shahzal.org/.github/workflows/azure-static-web-apps-black-bush-0cb3dba10.yml</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/.github/workflows/jekyll-gh-pages.yml</loc>
-  </url>
-  <url>
-    <loc>https://shahzal.org/.github/workflows/srchacker-AutoDeployTrigger-d287f809-79c4-42ef-92ce-8d753daf93bf.yml</loc>
-  </url>
-
   <!-- src Directory -->
   <!-- Add files in the src directory here -->
 
