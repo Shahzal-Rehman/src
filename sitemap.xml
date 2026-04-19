@@ -8,26 +8,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+   <url>
     <loc>https://shahzal.org</loc>
     <lastmod>2024-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahzal.org</loc>
+    <loc>https://shahzal.org/contact</loc>
     <lastmod>2024-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://shahzal.org/</loc>
-    <lastmod>2024-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-<url>
-    <loc>https://shahzal.org/home</loc>
+    <loc>https://shahzal.org/About</loc>
     <lastmod>2024-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -39,6 +33,60 @@
     <priority>0.8</priority>
   </url>
 <url>
+    <loc>https://blogs.shahzal.org</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://colour.shahzal.org/effect.html</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://break.shahzal.org/index.HTML</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://break.shahzal.org/index%20(2).html</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://game.shahzal.org</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://home.shahzal.org</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://home.shahzal.org/me.html</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+   <url>
+    <loc>https://home.shahzal.org/my.html</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://guru.shahzal.org</loc>
+    <lastmod>2024-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://shahzal.org/ems.html</loc>
     <lastmod>2024-07-09</lastmod>
     <changefreq>monthly</changefreq>
